@@ -1,8 +1,8 @@
 # UnityMsgBox
 ![image](https://user-images.githubusercontent.com/31759313/45017027-6f466200-b061-11e8-96d4-664c929ec0e6.png)
-유니티 대화상자 예제소스입니다. 자세한 내용은 [Wiki](https://github.com/HanSangKkyu/UnityMsgBox/wiki)를 참조하세요.
+유니티 대화상자 예제소스입니다.
 
-
+핵심은 아래 코드입니다.
 CreateMsg.cs
 
 ```c#
@@ -81,4 +81,35 @@ public class CreateMsg : MonoBehaviour
         page = 0;
     }
 }
+```
+
+#사용법
+
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class playMsg : MonoBehaviour
+{
+
+    private string[] lines = { "테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1테스트1",
+        "테스트2테스트2테스트2테스트2테스트2테스트2테스트2테스트2테스트2테스트2테스트2",
+        "테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3테스트3" };
+
+    // Use this for initialization
+    void Start()
+    {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(1)) // 대화상자가 활성화되는 타이밍을 설정한다.(여기서는 마우스 우클릭)
+        {
+            CreateMsg.instance.show(lines);
+        }
+    }
+}
+
 ```
