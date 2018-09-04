@@ -1,5 +1,5 @@
 # UnityMsgBox
-![image](https://user-images.githubusercontent.com/31759313/45017027-6f466200-b061-11e8-96d4-664c929ec0e6.png)
+![image](https://user-images.githubusercontent.com/31759313/45017547-cd277980-b062-11e8-8bc4-9705c009ad95.png)
 유니티 대화상자 예제소스입니다.
 
 핵심은 아래 코드입니다.
