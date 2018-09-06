@@ -107,7 +107,8 @@ public class playMsg : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1)) // 대화상자가 활성화되는 타이밍을 설정한다.(여기서는 마우스 우클릭)
         {
-            CreateMsg.instance.show(lines);
+            CreateMsg.instance.show(lines); // 여러번 말하기
+            CreateMsg.instance.show("대화상자 한개만 출력하고 싶을 "):
         }
     }
 }
